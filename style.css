@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Work Sans";
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #153677, #40e85f);
+    padding: 10px;
+}
+
+.To-Do-App {
+    width: 100%;
+    max-width: 540px;
+    background: #fff;
+    margin: 100px, auto, 20px;
+    padding: 40px, 30px, 70px;
+    border-radius: 10px;
+}
+
+.To-Do-App h1 {
+    color: #777778;
+    display:flex;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    padding: 10px;
+}
+
+.input-container {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #cacaca;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+input {
+    flex:1;
+    font-size: 16px;
+    padding: 10px;
+    outline: none;
+    background: transparent;
+    border: none;
+}
+
+button {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: orange;
+    color: black;
+    padding: 10px 50px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+ul li {
+    list-style: none;
+    font-size: 18px;
+    padding: 12px 8px 12px 50px;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+}
+
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(assets/circle-regular.svg);
+    background-size: cover;
+    background-position: center;
+    top: 8px;
+    left: 8px;
+}
+
+ul li.complete {
+    color: #8e8b8b;
+    text-decoration: line-through;
+}
+
+ul li.complete::before{
+    background-image: url(assets/circle-check-solid.svg);
+    background-color: orange
+}
