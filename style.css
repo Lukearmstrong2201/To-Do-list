@@ -70,7 +70,6 @@ ul li {
     font-size: 18px;
     padding: 12px 8px 12px 50px;
     cursor: pointer;
-    user-select: none;
     position: relative;
 }
 
@@ -81,7 +80,6 @@ ul li::before {
     width: 28px;
     border-radius: 50%;
     background-image: url(assets/circle-regular.svg);
-    background-size: cover;
     background-position: center;
     top: 8px;
     left: 8px;
@@ -95,4 +93,24 @@ ul li.complete {
 ul li.complete::before{
     background-image: url(assets/circle-check-solid.svg);
     background-color: orange
+}
+
+ul li span {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    right: 0;
+    top: 5px;
+    font-size: 20px;
+    color: red;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 5px;
+    line-height: 40px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+ul li span:hover{
+    background: #f7a838;
 }
