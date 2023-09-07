@@ -80,6 +80,7 @@ ul li::before {
     width: 28px;
     border-radius: 50%;
     background-image: url(assets/circle-regular.svg);
+
     background-position: center;
     top: 8px;
     left: 8px;
